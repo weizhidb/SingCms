@@ -1,0 +1,50 @@
+
+
+<include file="Index/header" />
+
+<div class="toppic">
+  <div class="am-container-1">
+    <div class="toppic-title left">
+      <i class="am-icon-newspaper-o toppic-title-i"></i>
+      <span class="toppic-title-span">客户案例</span>
+      <p>Case Information</p>
+    </div>
+    <div class="right toppic-progress">
+      <span><a href="/SingCms/ychome.php?c=Customer&a=index" class="w-white">客户案例</a></span>
+      <i class=" am-icon-arrow-circle-right w-white"></i>
+      <span><a  class="w-white">案例详情</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="am-container-1 margin-t30">
+  <div class="words-title ">
+    <span>{$customer.customer_name}</span>
+    <div>{$customer.create_time|date="Y-m-d H:i",###}</div>
+  </div>
+</div>
+
+<div class="solution-inform">
+  <div class=" solution-inform-content-all">
+    <div class="solution-inform-content">
+      <!--<p class="inform-content-p">华天公路货运管理系统是华天软件为物流货运企业全力打造的一套物流网络信息化的实在营运解决方案，通过６年的不断积累，汲取数十家物流企业的实战经验，以客户为中心，以业务为纽带，为车辆调度，仓库管理，装车发货，分拣中心，卸货提货，</p>-->
+      <div class="solution-inform-content-img">
+        <img src="{$customer.thumb}"/>
+        <div class="clear"></div>
+      </div>
+      <p class="solution-inform-content-words">{$customer.customer_desc}
+      </p>
+
+
+
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.hw-menu .hw-menu-customer').addClass("hw-menu-active");
+</script>
+
+
+
+<include file="Index/footer" />

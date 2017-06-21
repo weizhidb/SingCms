@@ -1,0 +1,219 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+  <include file="Index/nav"/>
+  <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
+  <div id="page-wrapper">
+
+    <div class="container-fluid">
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ol class="breadcrumb">
+            <li>
+              <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=content">案例管理</a>
+            </li>
+            <li class="active">
+              <i class="fa fa-edit"></i> 案例添加
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-6">
+
+          <form class="form-horizontal" id="singcms-form">
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">案例名称:</label>
+              <div class="col-sm-5">
+                <input type="text" name="customer_name" class="form-control" id="inputname" placeholder="请填写案例名称">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">案例摘要:</label>
+              <div class="col-sm-5">
+                <input type="text" name="customer_subject" class="form-control" id="inputname" placeholder="请填写案例摘要">
+              </div>
+            </div>
+
+            <!--<div class="form-group">-->
+              <!--<label for="inputname" class="col-sm-2 control-label">标题颜色:</label>-->
+              <!--<div class="col-sm-5">-->
+                <!--<select class="form-control" name="title_font_color">-->
+                  <!--<option value="">==请选择颜色==</option>-->
+                    <!--<foreach name="titleFontColor" item="color">-->
+                      <!--<option value="{$key}">{$color}</option>-->
+                    <!--</foreach>-->
+                <!--</select>-->
+              <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="form-group">-->
+              <!--<label for="inputname" class="col-sm-2 control-label">来源:</label>-->
+              <!--<div class="col-sm-5">-->
+                <!--<select class="form-control" name="copyfrom">-->
+                  <!--<foreach name="copyfrom" item="cfrom">-->
+
+                    <!--<option value="{$key}">{$cfrom}</option>-->
+                  <!--</foreach>-->
+                <!--</select>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">案例描述:</label>
+              <div class="col-sm-5">
+                <textarea class="input js-editor" id="editor_singcms" name="customer_desc" rows="20"  style="width: 100%;height: 150px;"></textarea>
+              </div>
+            </div>
+            <!--<div class="form-group">-->
+              <!--<label for="inputPassword3" class="col-sm-2 control-label">描述:</label>-->
+              <!--<div class="col-sm-9">-->
+                <!--<input type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<label for="inputPassword3" class="col-sm-2 control-label">关键字:</label>-->
+              <!--<div class="col-sm-5">-->
+                <!--<input type="text" class="form-control" name="keywords" id="inputPassword3" placeholder="请填写关键词">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--图片上传-->
+            <div id="uploadMultiPic" style="width: 570px;min-height: 200px;background: #F1F1DB;text-align: center;margin-left: 150px;margin-bottom: 20px;">
+
+              <div id="upload" ></div>
+              <input type="text" name="file1" class="cfiel1" value="" style="display: none;">
+              <input type="text" name="file2" class="cfiel2" value="" style="display: none;">
+              <input type="text" name="file3" class="cfiel3" value="" style="display: none;">
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+
+
+<!--图片上传模态框-->
+<div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form class="avatar-form" action="/SingCms/admin.php?c=content&a=savepic" enctype="multipart/form-data" method="post">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title" id="avatar-modal-label">Change Logo Picture</h4>
+        </div>
+        <div class="modal-body">
+          <div class="avatar-body">
+            <div class="avatar-upload">
+              <input class="avatar-src" name="avatar_src" type="hidden">
+              <input class="avatar-data" name="avatar_data" type="hidden">
+              <label for="avatarInput">图片上传</label>
+              <input class="avatar-input" id="avatarInput" name="avatar_file" type="file"></div>
+            <div class="row">
+              <div class="col-md-9">
+                <div class="avatar-wrapper"></div>
+              </div>
+              <div class="col-md-3">
+                <div class="avatar-preview preview-lg"></div>
+                <div class="avatar-preview preview-md"></div>
+                <div class="avatar-preview preview-sm"></div>
+              </div>
+            </div>
+            <div class="row avatar-btns">
+              <div class="col-md-9">
+                <div class="btn-group">
+                  <button class="btn" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"><i class="fa fa-undo"></i> 向左旋转</button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"><i class="fa fa-repeat"></i> 向右旋转</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-success btn-block avatar-save" type="submit"><i class="fa fa-save"></i> 保存修改</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  var SCOPE = {
+    'save_url' : '/SingCms/admin.php?c=customer&a=add',
+      'jump_url' : '/SingCms/admin.php?c=customer',
+  };
+
+</script>
+<!-- /#wrapper -->
+<script src="/Public/js/admin/image.js"></script>
+<script>
+  // 6.2
+  KindEditor.ready(function(K) {
+    window.editor = K.create('#editor_singcms',{
+      uploadJson : '/SingCms/admin.php?c=image&a=kindupload',
+      afterBlur : function(){this.sync();}, //
+    });
+  });
+</script>
+
+<script type="text/javascript">
+
+  /*
+   * 服务器地址,成功返回,失败返回参数格式依照jquery.ajax习惯;
+   * 其他参数同WebUploader
+   */
+
+  $('#upload').diyUpload({
+    url:'Public/upload/server/fileupload.php',
+    //最大上传的文件数量,
+    fileNumLimit:3,
+    success:function( data ) {
+//      var dataObj = JSON.parse(data._raw);
+//      console.info( data._raw );
+      console.info( data._raw );
+      upload_file(data._raw);
+    },
+    error:function( err ) {
+      console.info( err );
+    }
+  });
+
+  function upload_file(path){
+//    alert("Public/upload/server/"+path);
+//    $(".imgtest").attr("src","Public/upload/server/"+path);
+    var path_tmp = "Public/upload/server/"+path;
+    if($(".cfiel1").attr("value") == ""){
+      $(".cfiel1").attr("value",path_tmp);
+    }else if($(".cfiel2").attr("value") == ""){
+      $(".cfiel2").attr("value",path_tmp);
+    }else if($(".cfiel3").attr("value") == ""){
+      $(".cfiel3").attr("value",path_tmp);
+    }
+
+  }
+</script>
+
+<include file="Index/footer" />

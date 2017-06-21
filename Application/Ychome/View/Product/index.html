@@ -1,0 +1,111 @@
+
+
+<include file="Index/header" />
+
+<style type="text/css">
+
+  /*列表选中后的样式*/
+  .li_select {color:#de3237;text-decoration:underline;}
+</style>
+
+<div class="toppic">
+  <div class="am-container-1">
+
+    <div class="toppic-title left">
+      <i class="am-icon-newspaper-o toppic-title-i"></i>
+      <span class="toppic-title-span">产品展示</span>
+      <p>Yucheng News</p>
+    </div>
+    <div class="right toppic-progress">
+      <span><a href="/SingCms/ychome.php?c=Index&a=index" class="w-white">首页</a></span>
+      <i class=" am-icon-arrow-circle-right w-white"></i>
+      <span><a href="/SingCms/ychome.php?c=Product&a=index" class="w-white">产品展示</a></span>
+    </div>
+  </div>
+</div>
+
+
+<div class="am-container-1 news-content-all" style="min-height
+: 550px;">
+  <div class="left am-u-sm-12 am-u-md-8 am-u-lg-9">
+    <ul class="news-ul" attr-id="{$productid}">
+      <volist name="productsbyId" id="product">
+        <li class="am-u-sm-12 am-u-md-6 am-u-lg-3 " attr-id="{$product.product_classify_id}">
+          <a href="/SingCms/ychome.php?c=Product&a=toinform&id={$product.id}">
+            <div class="news-ul-liall">
+              <img class="news-ul-liimg" src="{$product.thumb}"/>
+              <div class="inform-list">
+                <div class="inform-list-date"><i class="am-icon-arrow-circle-right"></i>{$product.create_time|date="Y-m-d H:i",###}</div>
+              </div>
+              <span>{$product.product_name}</span>
+              <p>{$product.product_subject}</p>
+              <span class="see-more3">查看更多<i class="am-icon-angle-double-right"></i></span>
+            </div>
+          </a>
+        </li>
+
+      </volist>
+      <div class="clear"></div>
+    </ul>
+    <ul class="am-pagination" style="display:none;text-align: center;margin-bottom: 30px;margin-top: 30px;">
+      <li ><a href="#">&laquo;</a></li>
+      <li><a href="#">上一页</a></li>
+      <li><a class="current-page">1/5</a></li>
+      <li><a href="#">下一页</a></li>
+      <li ><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+
+  <div class="left am-u-sm-12 am-u-md-4 am-u-lg-3" style="float: left;">
+
+    <section data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+      <div class="hot-title"><i class="am-icon-thumbs-o-up"></i>产品列表 / Hot Products</div>
+      <div class="hot_scdt">
+        <div class="list">
+          <ul class="productclassify_list">
+            <volist name="productclassifys" id="productclassify">
+                <li attr-id="{$productclassify.id}" class=""><img src="PublicYc/images/dian.png" width="5px" height="5px" alt="" /><a title="">{$productclassify.product_classify_name}</a></li>
+            </volist>
+          </ul>
+        </div><!--list end-->
+
+      </div><!--scdt end-->
+
+    </section>
+
+  </div>
+
+  <div class="clear"></div>
+</div>
+
+
+
+<script>
+  $('.hw-menu .hw-menu-product').addClass("hw-menu-active");
+
+</script>
+
+<script type="text/javascript">
+  $(function() {
+    $('.productclassify_list').find('li').each(function() {
+      if($(this).attr("attr-id") == $('.news-ul').attr('attr-id') ){
+        $(this).find('a').css('color', '#de3237');
+      }
+    })
+
+  });
+
+//  在产品展示里面点击产品列表
+  $(".productclassify_list li").click(function(){
+    var productid = $(this).attr('attr-id');
+    var url = SCOPE.product_list_url + '&id='+productid;
+    window.location.href=url;
+  });
+
+  var SCOPE = {
+    'product_list_url' : '/SingCms/ychome.php?c=Product&a=index',
+  }
+</script>
+
+
+<include file="Index/footer" />

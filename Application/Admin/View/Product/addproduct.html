@@ -1,0 +1,157 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="/SingCms/admin.php?c=product">产品管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i> 产品添加
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form class="form-horizontal" id="singcms-form">
+
+                        <div class="form-group">
+                            <label for="inputname" class="col-sm-2 control-label">产品名称:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="product_name" class="form-control" id="inputname" placeholder="请填写产品名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputname" class="col-sm-2 control-label">摘要:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="product_subject" class="form-control" id="inputname" placeholder="请填写摘要">
+                            </div>
+                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label for="inputname" class="col-sm-2 control-label">缩图:</label>-->
+                            <!--<div class="col-sm-5">-->
+                                <!--<input id="file_upload"  type="file" multiple="true" >-->
+                                <!--<img style="display: none" id="upload_org_code_img" src="" width="150" height="150">-->
+                                <!--<input id="file_upload_image" name="product_pic" type="hidden" multiple="true" value="">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+                            <label for="inputname" class="col-sm-2 control-label">所属分类:</label>
+                            <div class="col-sm-5">
+                                <select class="form-control" name="product_classify_id">
+                                    <foreach name="productClassifys" item="productClassify">
+                                        <option value="{$productClassify.id}">{$productClassify.product_classify_name}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
+                            <div class="col-sm-5">
+                                <textarea class="input js-editor" id="editor_singcms" name="product_desc" rows="20" style="width: 100%;height: 150px;"></textarea>
+                            </div>
+                        </div>
+                        <!--图片上传-->
+                        <div id="uploadMultiPic" style="width: 870px;min-height: 200px;background: #F1F1DB;text-align: center;margin-left: 50px;margin-bottom: 20px;">
+
+                            <div id="upload" ></div>
+                            <input type="text" name="file1" class="cfiel1" value="" style="display: none;">
+                            <input type="text" name="file2" class="cfiel2" value="" style="display: none;">
+                            <input type="text" name="file3" class="cfiel3" value="" style="display: none;">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<script>
+    var SCOPE = {
+        'save_url' : '/SingCms/admin.php?c=product&a=saveproduct',
+        'jump_url' : '/SingCms/admin.php?c=product',
+    };
+
+</script>
+<!-- /#wrapper -->
+<script src="/Public/js/admin/image.js"></script>
+<script>
+    // 6.2
+    KindEditor.ready(function(K) {
+        window.editor = K.create('#editor_singcms',{
+            uploadJson : '/SingCms/admin.php?c=image&a=kindupload',
+            afterBlur : function(){this.sync();}, //
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+
+    /*
+     * 服务器地址,成功返回,失败返回参数格式依照jquery.ajax习惯;
+     * 其他参数同WebUploader
+     */
+
+    $('#upload').diyUpload({
+        url:'Public/upload/server/fileupload.php',
+        //最大上传的文件数量,
+        fileNumLimit:3,
+        //单个文件大小(单位字节);
+        fileSingleSizeLimit:50000 * 1024,
+        success:function( data ) {
+//      var dataObj = JSON.parse(data._raw);
+//      console.info( data._raw );
+            console.info( data._raw );
+            upload_file(data._raw);
+        },
+        error:function( err ) {
+            console.info( err );
+        }
+    });
+
+    function upload_file(path){
+//    alert("Public/upload/server/"+path);
+//    $(".imgtest").attr("src","Public/upload/server/"+path);
+        var path_tmp = "Public/upload/server/"+path;
+        if($(".cfiel1").attr("value") == ""){
+            $(".cfiel1").attr("value",path_tmp);
+        }else if($(".cfiel2").attr("value") == ""){
+            $(".cfiel2").attr("value",path_tmp);
+        }else if($(".cfiel3").attr("value") == ""){
+            $(".cfiel3").attr("value",path_tmp);
+        }
+
+    }
+</script>
+<include file="Index/footer" />

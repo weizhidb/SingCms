@@ -1,0 +1,227 @@
+[ 2017-06-22T07:40:47+08:00 ] 127.0.0.1 /SingCms/admin.php?c=customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: p F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined index: customer_name F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `cms_customer` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: data F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 21 行.
+SQL: SELECT * FROM `cms_customer` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0710s ]
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: pageres F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 176 行.
+NOTIC: [8] Undefined variable: pageres F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 179 行.
+NOTIC: [8] Undefined variable: positions F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-06-22T07:40:50+08:00 ] 127.0.0.1 /SingCms/admin.php?c=customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: p F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 13 行.
+NOTIC: [8] Undefined index: customer_name F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `cms_customer` [ RunTime:0.0690s ]
+NOTIC: [8] Undefined variable: data F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\CustomerController.class.php 第 21 行.
+SQL: SELECT * FROM `cms_customer` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0680s ]
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 162 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 163 行.
+NOTIC: [8] Undefined variable: new F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 166 行.
+NOTIC: [8] Undefined variable: pageres F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 176 行.
+NOTIC: [8] Undefined variable: pageres F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 179 行.
+NOTIC: [8] Undefined variable: positions F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\88014eeacc2e3d16986256918cc5cc2e.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.193011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-22T07:40:57+08:00 ] 127.0.0.1 /SingCms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [8] Undefined index: title F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: catid F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\ContentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: p F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc ,news_id desc LIMIT 0,10   [ RunTime:0.0760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.9081s ]
+NOTIC: [8] Undefined variable: sing_path F:\Software\wampInstall\www\SingCms\ThinkPHP\Common\functions.php 第 991 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.9081s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.1050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.9151s ]
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.972056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.972056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-22T07:41:02+08:00 ] 127.0.0.1 /SingCms/admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: p F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 52 行.
+NOTIC: [8] Undefined index: pageSize F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 53 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0740s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: sing_path F:\Software\wampInstall\www\SingCms\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-22T07:41:14+08:00 ] 127.0.0.1 /SingCms/admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\Software\wampInstall\www\SingCms\Application\Admin\Controller\MenuController.class.php 第 53 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) F:\Software\wampInstall\www\SingCms\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.9031s ]
+SQL: SELECT * FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 3,3   [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `type` = 1 AND `status` <> -1 LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined variable: sing_path F:\Software\wampInstall\www\SingCms\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a F:\Software\wampInstall\www\SingCms\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav F:\Software\wampInstall\www\SingCms\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

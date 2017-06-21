@@ -1,0 +1,80 @@
+
+
+<include file="Index/header" />
+
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="toppic">
+  <div class="am-container-1">
+    <div class="toppic-title left">
+      <i class="am-icon-newspaper-o toppic-title-i"></i>
+      <span class="toppic-title-span">s</span>
+      <p>News Information</p>
+    </div>
+    <div class="right toppic-progress">
+      <span><a href="/SingCms/ychome.php?c=Product&a=index" class="w-white">产品展示</a></span>
+      <i class=" am-icon-arrow-circle-right w-white"></i>
+      <span><a href="" class="w-white">产品详情</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="am-container-1 margin-t30">
+  <div class="words-title ">
+    <span>{$product.product_name}</span>
+    <div>{$product.create_time|date="Y-m-d H:i",###}</div>
+  </div>
+</div>
+
+<div class="solution-inform">
+  <div class=" solution-inform-content-all">
+    <div class="solution-inform-content">
+      <!--<p class="inform-content-p">华天公路货运管理系统是华天软件为物流货运企业全力打造的一套物流网络信息化的实在营运解决方案，通过６年的不断积累，汲取数十家物流企业的实战经验，以客户为中心，以业务为纽带，为车辆调度，仓库管理，装车发货，分拣中心，卸货提货，</p>-->
+      <div class="solution-inform-content-img">
+        <img src="{$product.thumb}"/>
+        <!--<div id="myCarousel" class="carousel slide">-->
+          <!--&lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;-->
+          <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+          <!--</ol>-->
+          <!--&lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;-->
+          <!--<div class="carousel-inner">-->
+            <!--<div class="item active">-->
+              <!--<img src="PublicYc/img/inform.png" alt="First slide">-->
+            <!--</div>-->
+            <!--<div class="item">-->
+              <!--<img src="PublicYc/img/inform.png" alt="Second slide">-->
+            <!--</div>-->
+            <!--<div class="item">-->
+              <!--<img src="PublicYc/img/inform.png" alt="Third slide">-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;-->
+          <!--<a class="carousel-control left" href="#myCarousel"-->
+             <!--data-slide="prev">&lsaquo;</a>-->
+          <!--<a class="carousel-control right" href="#myCarousel"-->
+             <!--data-slide="next">&rsaquo;</a>-->
+        <!--</div>-->
+
+        <div class="clear"></div>
+      </div>
+      <p class="solution-inform-content-words">{$product.product_desc}
+      </p>
+
+
+
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.hw-menu .hw-menu-product').addClass("hw-menu-active");
+</script>
+
+
+
+<include file="Index/footer" />

@@ -1,0 +1,30 @@
+[ 2017-06-03T19:43:08+08:00 ] 127.0.0.1 /SingCms/?c=YcHome&m=productshow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Productshow
+
+[ 2017-06-03T19:43:19+08:00 ] 127.0.0.1 /SingCms/?c=YcHome&m=productShow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:ProductShow
+
+[ 2017-06-03T19:43:37+08:00 ] 127.0.0.1 /SingCms/?c=YcHome&m=productShow&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:ProductShow
+
+[ 2017-06-03T19:43:45+08:00 ] 127.0.0.1 /SingCms/?c=YcHome&m=ProductShow&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:ProductShow
+
+[ 2017-06-03T19:44:42+08:00 ] 127.0.0.1 /SingCms/?c=YcHome&m=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Product
+

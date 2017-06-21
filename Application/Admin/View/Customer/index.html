@@ -1,0 +1,129 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <div id="page-wrapper">
+
+        <div class="container-fluid" >
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="/SingCms/admin.php?c=content">案例管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>案例列表
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div style="margin-bottom:15px;">
+                <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+            </div>
+            <div class="row">
+                <form action="/SingCms/admin.php" method="get">
+
+                    <input type="hidden" name="c" value="customer"/>
+                    <input type="hidden" name="a" value="index"/>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <input class="form-control" name="customer_name" type="text" value="" placeholder="输入搜索信息" />
+                            <span class="input-group-btn">
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" style="width: 100%;">
+                    <h3></h3>
+                    <div class="table-responsive">
+                        <form id="singcms-listorder">
+                            <table class="table table-bordered table-hover singcms-table">
+                                <thead>
+                                <tr>
+                                    <!--<th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>-->
+                                    <!--<th width="14">排序</th>&lt;!&ndash;6.7&ndash;&gt;-->
+                                    <!--<th>id</th>-->
+                                    <th>案例名称</th>
+                                    <th>案例简要</th>
+                                    <th>案例描述</th>
+                                    <th>封面图</th>
+                                    <th>时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="customers" id="customer">
+                                    <tr>
+                                        <td>{$customer.customer_name}</td>
+                                        <td>{$customer.customer_subject}</td>
+                                        <td>{$customer.customer_desc}</td>
+                                        <td style="text-align: center;">
+                                            <img src="{$customer.thumb}" style="height: 50px;width: 50px;">
+                                        </td>
+                                        <td>{$customer.create_time|date="Y-m-d H:i",###}</td>
+                                        <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$new.news_id}" ></span>
+                                            <a  id="singcms-delete"  attr-id="{$new.news_id}"  attr-message="删除">
+                                                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                            </a>
+                                            <!--<a target="_blank" href="/SingCms/index.php?c=detail&a=view&id={$new.news_id}" class="sing_cursor glyphicon glyphicon-eye-open" aria-hidden="true"  ></a>-->
+
+                                        </td>
+                                    </tr>
+                                </volist>
+
+                                </tbody>
+                            </table>
+                            <nav>
+
+                                <!--<ul >-->
+                                    <!--{$pageres}-->
+                                <!--</ul>-->
+                                <div class="pages">
+                                    {$pageres}
+                                </div>
+
+                            </nav>
+                            <div style="display: none">
+                                <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
+                            </div>
+                        </form>
+                        <div class="input-group" style="display: none">
+                            <select class="form-control" name="position_id" id="select-push">
+                                <option value="0">请选择推荐位进行推送</option>
+                                <foreach name="positions" item="position">
+                                    <option value="{$position.id}">{$position.name}</option>
+                                </foreach>
+                            </select>
+                            <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<script>
+    var SCOPE = {
+        'add_url' : '/SingCms/admin.php?c=customer&a=add',
+    }
+</script>
+<include file="Index/footer" />
