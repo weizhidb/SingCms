@@ -32,6 +32,9 @@
     <script src="/SingCms/Public/js/dialog.js"></script>
     <script type="text/javascript" src="/SingCms/Public/js/party/jquery.uploadify.js"></script>
 
+
+    <link rel="stylesheet" href="/SingCms/Public/js/dialog/skin/layer.css"  media="all">
+
     <!--图片裁剪js  css-->
     <script src="/SingCms/Public/js/cropper.min.js"></script>
     <script src="/SingCms/Public/js/sitelogo.js"></script>
@@ -152,6 +155,7 @@
                 </select>
               </div>
             </div>
+
 
             <!--<div class="form-group">-->
               <!--<label for="inputname" class="col-sm-2 control-label">来源:</label>-->

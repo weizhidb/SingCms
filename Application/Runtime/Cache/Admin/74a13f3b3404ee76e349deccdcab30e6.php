@@ -32,6 +32,9 @@
     <script src="/SingCms/Public/js/dialog.js"></script>
     <script type="text/javascript" src="/SingCms/Public/js/party/jquery.uploadify.js"></script>
 
+
+    <link rel="stylesheet" href="/SingCms/Public/js/dialog/skin/layer.css"  media="all">
+
     <!--图片裁剪js  css-->
     <script src="/SingCms/Public/js/cropper.min.js"></script>
     <script src="/SingCms/Public/js/sitelogo.js"></script>
@@ -164,6 +167,8 @@
                             <input type="text" name="file2" class="cfiel2" value="" style="display: none;">
                             <input type="text" name="file3" class="cfiel3" value="" style="display: none;">
                         </div>
+
+                       
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
